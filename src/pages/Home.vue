@@ -1,8 +1,7 @@
 <template>
     <div>
-        <div class="content">
-            <h2>LAVAS</h2>
-            <h4>[ˈlɑ:vəz]</h4>
+        <div :class="$style.content">
+            <h2>hello,pwa</h2>
         </div>
     </div>
 </template>
@@ -48,7 +47,7 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus" scoped module>
 $text-color := rgba($material-theme.text-color, $material-theme.primary-text-percent)
 
 .content

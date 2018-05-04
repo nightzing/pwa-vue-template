@@ -16,7 +16,7 @@ function resolve(dir) {
 
 module.exports = {
     entry: {
-        app: ['babel-polyfill', './src/entry-client.js']
+        app: ['./src/viewport.js','babel-polyfill', './src/entry-client.js']
     },
     output: {
         path: config.build.assetsRoot,
@@ -49,7 +49,7 @@ module.exports = {
                 enforce: 'pre'
             },
             {
-                test: /\.vue$/,
+                test: /\.vue$/,                
                 use: [
                     {
                         loader: 'vue-loader',
