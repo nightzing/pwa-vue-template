@@ -111,84 +111,96 @@ export default {
 </script>
 
 <style lang="stylus">
+@import './assets/styles/material-icons.scss'
+@import '~vuetify/src/stylus/app'
 
-@import './assets/styles/global'
+body {
+//   background-color: $material-theme.bg-color;
+}
 
-body
-    background-color: $material-theme.bg-color
-
-#app
-    position static
-    font-family 'Avenir', Helvetica, Arial, sans-serif
-    -webkit-font-smoothing antialiased
-    -moz-osx-font-smoothing grayscale
-    text-align center
-    color #2c3e50
+#app {
+  position: static;
+  font-family: 'Avenir' Helvetica Arial sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 </style>
 
 <style lang="stylus" scoped>
-.app-shell
-    position absolute
-    top 0
-    right 0
-    bottom 0
-    left 0
-    width 100%
-    height 100%
-    display flex
-    flex-direction column
-    transform translate3d(0, 0, 0)
+.app-shell {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transform: translate3d(0, 0, 0);
 
-    .app-shell-header
-        position fixed
-        top 0
-        left 0
-        right 0
+  .app-shell-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 
-    .app-shell-footer
-        position fixed
-        bottom 0
-        left 0
-        right 0
+  .app-shell-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 
-    .app-view-wrapper
-        flex 1
-        position relative
-        overflow hidden
+  .app-view-wrapper {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
 
-        .app-view
-            position absolute
-            top 0
-            right 0
-            bottom 0
-            left 0
-            overflow-x hidden
-            overflow-y auto
-            transition transform 0.4s cubic-bezier(.55, 0, .1, 1)
-            background: $material-theme.bg-color
-            color: $material-theme.text-color
-            -webkit-overflow-scrolling touch
+    .app-view {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      transition: column 0.4s cubic-bezier(0.55, 0, 0.1, 1);
+      background: $material-theme.bg-color;
+      color: $material-theme.text-color;
+      -webkit-overflow-scrolling: touch;
+      &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
 
-            // 隐藏掉scrollbar
-            &::-webkit-scrollbar
-                width 0px
-                background transparent
+      &.app-view-with-header {
+        top: $app-header-height;
+      }
 
-            &.app-view-with-header
-                top $app-header-height
+      &.app-view-with-footer {
+        bottom: $app-footer-height;
+      }
 
-            &.app-view-with-footer
-                bottom $app-footer-height
+      &.slide-left-enter {
+        transform: translate(100%, 0);
+      }
 
-            &.slide-left-enter
-                transform translate(100%, 0)
+      &.slide-right-enter {
+        transform: translate(-100%, 0);
+      }
 
-            &.slide-right-enter
-                transform translate(-100%, 0)
+      &.slide-right-leave-active {
+        transform: translate(100%, 0);
+      }
 
-            &.slide-right-leave-active
-                transform translate(100%, 0)
-
-            &.slide-left-leave-active
-                transform translate(-100%, 0)
+      &.slide-left-leave-active {
+        transform: translate(-100%, 0);
+      }
+    }
+  }
+}
 </style>

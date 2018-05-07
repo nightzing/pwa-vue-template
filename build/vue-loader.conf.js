@@ -12,8 +12,9 @@ const isProduction = process.env.NODE_ENV === 'production';
 module.exports = {
     loaders: utils.cssLoaders({
         cssModules: {
-            localIdentName: '[path][name]---[local]---[hash:base64:5]',
-            camelCase: true
+            // localIdentName: '[path][name]---[local]---[hash:base64:5]',
+            localIdentName: '[path][name]---[local]',
+            // camelCase: true
         },
         sourceMap: isProduction
             ? config.build.productionSourceMap

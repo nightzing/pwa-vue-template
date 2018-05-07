@@ -67,14 +67,14 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-
-.app-bottom-navigator-wrapper
-    height $app-footer-height
-    transition transform 0.3s ease-out
+<style lang="scss" scoped>
+.app-bottom-navigator-wrapper {
+    height: 52px;
+    transition: transform 0.3s ease-out;
 
     &.slide-up-enter,
-    &.slide-up-leave-to
-        transform translate(0, 100%)
-
+    &.slide-up-leave-to {
+        transform: translate(0, 100%);
+    }
+}
 </style>

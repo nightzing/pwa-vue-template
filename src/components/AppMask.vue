@@ -19,25 +19,26 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 
-.app-mask-wrapper
-    width 100%
-    height 100%
-    z-index $app-mask-zindex
-    background $app-mask-bgcolor
-    opacity $app-mask-opacity
-    position fixed
-    top 0
-    left 0
+.app-mask-wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: $app-mask-zindex;
+  background: $app-mask-bgcolor;
+  opacity: $app-mask-opacity;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    &.fade-enter,
-    &.fade-leave-active
-        opacity 0
-        transition opacity $app-mask-duration
+  &.fade-enter, &.fade-leave-active {
 
-    &.fade-leave,
-    &.fade-enter-active
-        transition opacity $app-mask-duration
+    opacity: 0;
+    transition: 0 $app-mask-duration;
+  }
 
+  &.fade-leave, &.fade-enter-active {
+    transition: 0 $app-mask-duration;
+  }
+}
 </style>

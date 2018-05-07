@@ -101,30 +101,30 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped module>
+<style lang="scss" scoped module>
 
 .app_header_wrapper {
-    display: flex
-    justify-content: space-between
-    align-items: center
-    height: 52px
-    background: #2874f0
-    color: #fff
-    padding: 0
-    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px rgba(0,0,0,.14), 0 1px 10px rgba(0,0,0,.12)
-    transition: transform 0.3s ease-out
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    background: #2874f0;
+    color: #fff;
+    padding: 0;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px rgba(0,0,0,.14), 0 1px 10px rgba(0,0,0,.12);
+    transition: transform 0.3s ease-out;
 
     &.slide-down-enter,
     &.slide-down-leave-to {
         transform: translate(0, -100%)
     }
     & > div {
-        display: flex
-        align-items: center
+        display: flex;
+        align-items: center;
     }
     .app-header-middle {
-        flex: 1
-        font-size: 1.2em
+        flex: 1;
+        font-size: 1.2em;
     }
     .app-header-icon {
         color: #fff;

@@ -29,7 +29,7 @@ export default {
     activated() {
         this.setAppHeader({
             show: true,
-            title: 'Lavas',
+            title: 'pwa-vue-template',
             showMenu: true,
             showBack: false,
             showLogo: true,
@@ -47,21 +47,21 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped module>
-$text-color := rgba($material-theme.text-color, $material-theme.primary-text-percent)
+<style lang="scss" scoped module>
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-.content
-    width 100%
-    position absolute
-    top 50%
-    left 50%
-    transform translate(-50%, -50%)
+    h2 {
+        font-size: 46px;
+        font-weight: 500;
+    }
 
-    h2
-        font-size 46px
-        font-weight 500
-
-    h2, h4
-        color $text-color
-
+    h2, h4 {
+        color: rgba(0,0,0,0.87);
+    }
+}
 </style>

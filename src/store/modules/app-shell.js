@@ -120,7 +120,7 @@ export default {
                  *
                  * @type {string}
                  */
-                title: 'Lavas',
+                title: 'pwa-vue',
 
                 /**
                  * logo图标名称
@@ -203,21 +203,21 @@ export default {
                 blocks: [
                     {
                         // 子列表1
-                        sublistTitle: 'Sublist1',
+                        sublistTitle: '子页面',
                         list: [
                             {
-                                text: 'Detail Page 1',
+                                text: '详情页 1',
                                 icon: 'sentiment_satisfied',
                                 route: '/detail/1'
                             },
                             {
-                                text: 'Detail Page 2',
+                                text: '详情页 2',
                                 image: 'https://github.com/google/material-design-icons/blob/master/social/2x_web/ic_mood_bad_black_48dp.png?raw=true',
                                 alt: 'mood-bad',
                                 route: '/detail/2'
                             },
                             {
-                                text: 'Detail Page 3',
+                                text: '详情页 3',
                                 svg: 'svg-sentiment-very-satisfied',
                                 route: '/detail/3'
                             }
