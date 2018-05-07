@@ -1,7 +1,7 @@
 <template>
     <transition
         name="slide-down">
-        <header class="app-header-wrapper" v-show="show">
+        <header :class="$style.app_header_wrapper" v-show="show">
             <div class="app-header-left">
                 <v-btn
                     icon
@@ -101,37 +101,35 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus" scoped module>
 
-$btn-color = #fff
-
-.app-header-wrapper
-    display flex
-    justify-content space-between
-    align-items center
-    height $app-header-height
-    background: $theme.primary
-    color $btn-color
-    padding 0
-    box-shadow 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px rgba(0,0,0,.14), 0 1px 10px rgba(0,0,0,.12)
-    transition transform 0.3s ease-out
+.app_header_wrapper {
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 52px
+    background: #2874f0
+    color: #fff
+    padding: 0
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px rgba(0,0,0,.14), 0 1px 10px rgba(0,0,0,.12)
+    transition: transform 0.3s ease-out
 
     &.slide-down-enter,
-    &.slide-down-leave-to
-        transform translate(0, -100%)
-
-    & > div
-        display flex
-        align-items center
-
-    .app-header-middle
-        flex 1
-        font-size 1.2em
-
-    // 改变 icon 大小
-    .app-header-icon
-        color $btn-color
-        width 20px
-        height 20px
-
+    &.slide-down-leave-to {
+        transform: translate(0, -100%)
+    }
+    & > div {
+        display: flex
+        align-items: center
+    }
+    .app-header-middle {
+        flex: 1
+        font-size: 1.2em
+    }
+    .app-header-icon {
+        color: #fff;
+        width: 30px;
+        height: 30px;
+    }
+}
 </style>
