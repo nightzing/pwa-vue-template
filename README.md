@@ -1,6 +1,6 @@
 # *pwa-vue-template*
 
-> *pew+vue的一个简单模板*
+> *pwa+vue的一个简单模板*
 
 ## npm 相关命令
 
@@ -11,7 +11,7 @@ npm install
 # 更新工程依赖
 npm update
 
-# 在 localhost:8082 上启动带有热更新机制的开发服务器
+# 在 localhost:2018 上启动带有热更新机制的开发服务器
 npm run dev
 
 # 检查您的代码是否规范
