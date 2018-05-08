@@ -36,17 +36,17 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 
-.app-not-found-title
-    margin-top 50px
-    color #666
-    font-size 24px
-    font-weight bold
-
-.not-found-avatar-icon
-    width 120px
-    height 120px
-    font-size 100px
-
+.app-not-found-title {
+    margin-top: 50px;
+    color: #666;
+    font-size: 24px;
+    font-weight: bold;
+}
+.not-found-avatar-icon {
+    width: 120px;
+    height: 120px;
+    font-size: 100px;
+}
 </style>

@@ -1,6 +1,6 @@
-# *__name__*
+# *pwa-vue-template*
 
-> *__desc__*
+> *pew+vue的一个简单模板*
 
 ## npm 相关命令
 
@@ -24,5 +24,4 @@ npm run build
 npm run build --report
 ```
 
-Lavas 工程模版基于 [vue-template](https://github.com/vuejs-templates/webpack) 模版创建。
-如果想要了解具体如何玩转整个 Lavas 创建的 PWA 工程, 请查看 [vue-template 指南](http://vuejs-templates.github.io/webpack/) 和 [vue-loader 指南](http://vuejs.github.io/vue-loader)。
+此工程模版基于 [vue-template](https://github.com/vuejs-templates/webpack) 模版创建。

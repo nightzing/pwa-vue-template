@@ -5,7 +5,7 @@
                 <v-flex xs10 offset-xs1>
                     <article class="detail-content text-xs-center">
                         <header class="detail-title text-xs-center">
-                            Detail {{$route.params.id}}
+                            详情页 {{$route.params.id}}
                         </header>
                         <router-link :to="{
                             name: 'detail',
@@ -13,7 +13,7 @@
                                 id: Number($route.params.id) + 1
                             }
                         }">
-                            Detail {{Number($route.params.id) + 1}}
+                            详情页 {{Number($route.params.id) + 1}}
                         </router-link>
                         <p>
                     Progressive Web App, 简称 PWA，是提升 Web App 的体验的一种新方法，能给用户原生应用的体验。
@@ -48,7 +48,7 @@ export default {
     created() {
         this.setAppHeader({
             show: true,
-            title: 'Lavas',
+            title: 'pwa-vue',
             showMenu: false,
             showBack: true,
             showLogo: false,

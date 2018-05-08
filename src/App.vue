@@ -115,7 +115,7 @@ export default {
 @import '~vuetify/src/stylus/app'
 
 body {
-//   background-color: $material-theme.bg-color;
+  background-color: $material-theme.bg-color;
 }
 
 #app {
@@ -128,7 +128,7 @@ body {
 }
 </style>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .app-shell {
   position: absolute;
   top: 0;
@@ -169,8 +169,8 @@ body {
       overflow-x: hidden;
       overflow-y: auto;
       transition: column 0.4s cubic-bezier(0.55, 0, 0.1, 1);
-      background: $material-theme.bg-color;
-      color: $material-theme.text-color;
+    //   background: $material-theme.bg-color;
+    //   color: $material-theme.text-color;
       -webkit-overflow-scrolling: touch;
       &::-webkit-scrollbar {
         width: 0px;
@@ -178,11 +178,11 @@ body {
       }
 
       &.app-view-with-header {
-        top: $app-header-height;
+        top: 52px;
       }
 
       &.app-view-with-footer {
-        bottom: $app-footer-height;
+        bottom: 56px;
       }
 
       &.slide-left-enter {

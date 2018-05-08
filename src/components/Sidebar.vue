@@ -346,7 +346,7 @@ function clientHeight() {
 
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .sidebar-wrapper {
   z-index: 9999;
 

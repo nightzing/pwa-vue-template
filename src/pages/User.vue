@@ -5,7 +5,7 @@
                 <p>
                     <v-icon class="user-avatar-icon user-icon">face</v-icon>
                 </p>
-                <p>Lavas</p>
+                <p>pwa-vue</p>
             </div>
             <v-list two-line>
                 <template v-for="item in items">
@@ -62,7 +62,7 @@ export default {
     activated() {
         this.setAppHeader({
             show: true,
-            title: 'Lavas',
+            title: 'pwa-vue-template',
             showMenu: true,
             showBack: false,
             showLogo: true,
@@ -86,28 +86,27 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 
-$user-icon-inactive-color := rgba($material-theme.text-color, $material-theme.inactive-icon-percent)
-$user-icon-active-color := rgba($material-theme.text-color, $material-theme.active-icon-percent)
+.user-icon {
+    color: rgba(0,0,0,0.38);
+}
+.user-avatar {
+    color: rgba(0,0,0,0.54);
+    margin: 50px auto 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
-.user-icon
-    color: $user-icon-inactive-color
-
-.user-avatar
-    color: $user-icon-active-color
-    margin 50px auto 20px
-    display flex
-    justify-content center
-    flex-direction column
-
-    &-icon
-        width 80px
-        height 80px
-        border-radius 50%
-        background: $user-icon-inactive-color
-        font-size 70px
-.material-icons
-    display inline-flex
-
+    &-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background:rgba(0,0,0,0.38);
+        font-size: 70px;
+    }
+}
+.material-icons {
+    display: inline-flex;
+}
 </style>

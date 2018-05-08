@@ -114,34 +114,35 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 
-header
-    display flex
-    align-items center
-    height 52px
-    box-shadow 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px rgba(0,0,0,.14), 0 1px 10px rgba(0,0,0,.12)
-
-form
-    flex 1
-
-.search-input
-    width 100%
-    outline none
-    font-size 16px
-    height 50px
-
-.search-btn
-    color #959595
-
-.search-loading
-    margin-top 30%
-    display flex
-    justify-content center
-
-.search-content
-    margin-top 20px
-
-li
-    list-style-type none
+header {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px rgba(0,0,0,.14), 0 1px 10px rgba(0,0,0,.12);
+}
+form {
+    flex: 1;
+}
+.search-input {
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    height: 50px;
+}
+.search-btn {
+    color: #959595;
+}
+.search-loading {
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+}
+.search-content {
+    margin-top: 20px;
+}
+li {
+    list-style-type: none;
+}
 </style>
