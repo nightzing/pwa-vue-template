@@ -25,3 +25,4 @@ npm run build --report
 ```
 
 此工程模版基于 [vue-template](https://github.com/vuejs-templates/webpack) 模版创建。
+项目文章介绍[当vue遇到pwa--vue+pwa移动端适配解决方案模板案例](https://juejin.im/post/5af264296fb9a07aa54248f9)
